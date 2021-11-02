@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/style.css">
+
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
+</head>
+<body>
+
+
+  <!--Navigation-->
+<div class="Container">
+<div class="Hero-Container">
+  <header>
+
+    <nav class="Header Flex">
+
+    <a class="Logo-Header" href="/index.html"><img src="images/logo.svg" alt="Huddle logo"></a>
+    
+    <button class="CTANav CTAHeader">Try It Free</button>
+    
+    </nav>
+
+  </header>
+
+<!--Hero-->
+<section class="Hero">
+ 
+  <div class="split">
+  <div class="InfoBox">
+  <h1> Build The Community Your Fans Will Love</h1>
+
+  <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+  Create connections with your users as you engage in genuine discussion.</p>
+
+ <button id="btnFindFollowers" class="CTA CTAPink" onclick="fetchData()">Check Your Recent Followers</button><br>
+
+</div>
+
+  <div class="HeroImage">
+    <img src="/images/illustration-mockups.svg" alt="Huddle Mockups">
+  </div>
+
+</div>
+
+</section>
+</div>
+</div>
+
+
+<!-- Display Recent Followers-->
+
+
+<div class="Container">
+  <section id="Followers" class="ContentBox BGSecondary Hidden">
+      <h1>
+        Here are your most recent followers
+      </h1>
+      <button id="Close" class="CloseButton" onclick="hideFollowers()">Close</button>
+      
+      <div class="RecentFollowers">
+            <div id="SearchResults" class="split SearchResults">
+              <!--New Users Are Placed Here Via API "UserResult"-->
+            </div>
+        </div>
+        
+  </section>
+ 
+</div>
+
+
+
+
+<!--Grow Together-->
+<div class="Container">
+    <section class="ContentBox">
+      <div class="split">
+  
+          <div class="ImgBox">
+             <img src="/images/illustration-grow-together.svg" alt="Illustration of two people talking">
+          </div>
+
+            <div class="InfoBox">
+              <h1>Grow Together</h1>
+              <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+              Think of the insightful conversations you miss out on with a feedback form. </p> 
+            </div>
+
+      </div>
+    </section>
+</div>
+
+
+<!--Flowing Conversations-->
+<div class="Container first-div">
+    <section class="ContentBox">
+      <div class="split">
+  
+          <div class="ImgBox">
+            <img src="/images/illustration-flowing-conversation.svg" alt="Illustration of people having a conversation">
+          </div>
+
+            <div class="InfoBox">
+              <h1>Flowing Conversations</h1>
+              <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+                 have just-in-time loading for a more natural flow.</p>
+            </div>
+            
+      </div>
+    </section>
+</div>
+
+<!--Your Users-->
+<div class="Container">
+    <section class="ContentBox">
+      <div class="split">
+  
+          <div class="ImgBox">
+            <img src="/images/illustration-your-users.svg" alt="Illustration of people pointing at analytics">
+          </div>
+
+            <div class="InfoBox">
+              <h1>Your Users</h1>
+              <p>It takes no time at all to integrate Huddle with your app's authentication solution. 
+                  This means, once signed in to your app, your users can start chatting immediately.</p>
+            </div>
+
+      </div>
+    </section>
+</div>
+
+
+<!--Ready to build your community?-->
+<div class="ContainerCTA">
+    <section class="CTABox">
+
+      <h1>Ready To Build Your Community?</h1>
+      <button class="CTA CTAPink">Get Started For Free</button>
+    
+  </section>
+</div>
+
+<!--Footer-->
+<footer>
+
+
+  <div class="ContainerF">
+    <div class="col-6">
+      <a href="#"><img src="/images/logoFooter.svg" alt=""></a>
+    </div>
+  </div>
+
+
+  <div class="ContainerF">
+    
+    <div class="col-3">
+      <ul class="NoListStyle">
+          <li><img class="Ficons" src="/images/icon-location.svg" alt="Location Icon"> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua</li>
+          <li><img class="Ficons" src="/images/icon-phone.svg" alt="Phone Icon">+1-543-123-4567</li>
+          <li><img class="Ficons" src="/images/icon-email.svg" alt="Email Icon">example@huddle.com</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="NoListStyle pdt">
+          <li>About Us</li>
+          <li>What We Do</li>
+          <li>FAQ</li>
+      </ul>
+    </div>
+
+    <div class="col-1">
+      <ul class="NoListStyle">
+          <li>Career</li>
+          <li>Blog</li>
+          <li>Contact Us</li>
+      </ul>
+    </div>
+
+
+    &copy; Copyright 2018 Huddle. All rights reserved.
+  </div>
+</footer>
+
+
+<script src="/Js/scripts.js"></script>
+</body>
+</html>

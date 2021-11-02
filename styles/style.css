@@ -1,0 +1,463 @@
+
+:root{
+
+    --Pale-Cyan: hsl(193, 100%, 96%);
+    --Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
+    --lightPink: #FF9ADB;
+    --BoxShadow: #e4e0e0;
+    --BodyCopy: 16px;
+    --CTAWeightNormal: 400;
+    --CTAWeightMedium: 600;
+    --CTAWeightThick: 700;
+    --PaddingSides: 0px 48px;
+    --ElementPaddingTop: 40px;
+}
+
+html{
+
+font-size: 100%;
+box-sizing: border-box;
+text-align: center;
+}
+
+*, *::after, *::before{
+
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0px;
+    line-height: 1.3;
+    font-size: var(--BodyCopy);
+    font-weight: var(--CTAWeightNormal);
+    color: var(--Dark-Cyan);
+    font-family: Open Sans;
+    
+    }
+
+.Flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+        
+    }
+        
+        
+/* Header & Navigation */
+    
+    .Hero{
+    width: 100%;
+    margin-top: 80px;
+    padding: var(--PaddingSides);
+    
+    }
+    
+    .Hero-Container{
+    max-width: 1440px;
+    background-image: url(/images/bg-hero-mobile.svg);
+    
+    }
+    
+    .Hero img{
+    margin: 10px 0px;
+    
+    display: block;
+    max-width: 640px;
+    
+    }
+    .Header img{
+
+        width: 126px;
+        max-width: 680px;
+        height: 20px;
+    
+    }
+    
+    .Header{
+    
+    padding: 34px 20px;
+    
+    
+    }
+    
+    .Logo-Header{
+    
+        margin-right: auto;
+    }
+    
+    /* Call to Actions */
+    .CTANav{
+    
+    border: none;
+    background-color: white;
+    padding: 9px 28px;
+    box-shadow: 0px 1px 16px var(--BoxShadow);
+    border-radius: 20px;
+    color: var(--Dark-Cyan);
+    font-family: Open Sans;
+    font-weight: var(--CTAWeightThick);
+    
+    
+    }
+
+    .CTA{
+
+        font-family: Open sans;
+        font-weight: var(--CTAWeightThick);
+        font-size: 16px;
+        border-radius: 50px;
+    
+    }
+    
+    .CTAPink{
+    
+        background-color: var(--Pink);
+        margin: 20px 0px;
+        padding: 16px 40px;
+        color: white;
+        border: none;
+    }
+
+/* Hover */
+
+.CTAPink:hover{
+
+    background-color: var(--lightPink);
+    cursor: pointer;
+
+}
+
+.CTANav:hover{
+
+    color: var(--Grayish-Blue);
+    cursor: pointer;
+
+}
+
+
+h1{
+font-family: Poppins;
+font-weight: var(--CTAWeightMedium);
+font-size: 20px;
+}
+
+/*  Containers  */
+.Container{
+    margin-inline: auto;
+    min-width: (90% 70rem);
+    max-width: 1280px;
+
+}
+
+.Container img{
+
+    width: 80%;
+    display: block;
+    max-width: 450px;
+
+}
+
+.split{
+
+display: flex;
+flex-direction: column;
+
+}
+
+.ContentBox {
+    max-width: 1440px;
+    margin: 50px 20px;
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 16px var(--BoxShadow);
+    
+    
+    
+    }
+    
+    .CTABox{
+        margin: 20px 20px;
+        padding: 40px 40px;
+        border-radius: 20px;
+        background-color: white;
+        position: relative;
+    }
+    
+    .CTABox h1{
+    
+    font-size: 20px;
+    
+    }
+    
+
+    .ContentBox img{
+
+    display: block;
+    max-width: 640px;
+        
+    }
+        
+        
+    .ContainerF{
+    margin-inline: auto;
+    min-width: (90% 70rem);
+    max-width: 1280px;
+    padding: 40px 30px 0px 30px;
+        
+    }
+
+
+
+/* Media Queries */
+
+
+@media (min-width: 700px) {
+
+    .split{
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+
+    }
+
+    .split > * {
+
+        flex-basis: 100%;
+
+    }
+
+    .Container {
+        max-width: 1280px;
+
+    }
+
+    .ContainerCTA{
+        margin-inline: auto;
+        max-width: 800px;
+    
+    }
+
+    .ContentBox h1{
+
+        font-size: 24px;
+        padding-top: 20px;
+        
+        }
+
+    .InfoBox{
+
+        padding: 20px 50px;
+
+    }
+    
+}
+
+@media (min-width: 740px){
+
+    [class^=col-]{
+        float: left;
+        padding: 0px 20px;
+        }
+
+    .col-3{
+
+        width: 50%;
+        margin-bottom: 0px;
+        
+        }
+        
+    .col-1{
+        width: 16.6666%;
+        margin-bottom: 0px;
+        }
+
+    .col-6{
+        padding-bottom: 30px;
+        padding-top: 180px;
+        }
+
+}
+
+
+
+
+/* Display Recent Followers  */
+.BGSecondary{
+    color: #ffffff;
+    background-color: var(--Dark-Cyan);
+
+}
+
+.Hidden{
+
+    display: none;
+
+}
+
+.CloseButton{
+
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 25px;
+    margin-bottom: 15px;
+
+}
+
+.CloseButton:hover{
+
+    background-color: var(--lightPink);
+    color: #ffffff;
+    cursor: pointer;
+
+}
+
+
+.SearchResults{
+
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+}
+
+.UserResult{
+    
+    
+    max-width: 200px;
+    text-align: left;
+    word-wrap:break-word;
+
+}
+
+.UserEmailHeading{
+
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 0px 0px;
+
+}
+
+.UserEmail{
+
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+
+.UserResult h4{
+
+    color: var(--Pink);
+    margin: 5px 0px;
+
+}
+
+.UserResult img{
+
+    border-radius: 10px;
+
+}
+
+
+/* Footer */
+
+.clearfix::after,
+footer::after
+{
+content: '';
+display: block;
+clear: both;
+}
+
+
+[class^=col-]{
+    width: 100%
+
+    }
+
+
+.col-6{
+    display: flex;
+    width: 100%;
+    padding-top: 140px;
+    
+    }
+
+
+.col-6 img{
+
+    width: 200px;
+
+}
+
+
+.col-3{
+
+    margin-bottom: 50px;
+
+}
+
+
+
+
+
+
+footer{
+background-color: var(--Dark-Cyan);
+color: white;
+margin-top: -10%;
+}
+
+
+.NoListStyle{
+
+list-style-type: none;
+font-size: 16px;
+line-height: 1.3;
+text-align: left;
+margin: 0px;
+padding: 0px;
+
+}
+
+
+.Ficons{
+
+position: absolute;
+left: 0;
+top: 5px;
+
+}
+
+footer li{
+
+margin-bottom: 15px;
+position: relative;
+padding-left: 30px;
+
+}
+
+.Socials{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Socials p{
+
+margin-right: 20px;
+padding: 10px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: solid 1px #ffffff;
+
+}
